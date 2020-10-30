@@ -8,6 +8,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    .information{
+        > a{
+            transition: all 0.6s;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
 }
 
 .about{
@@ -56,10 +64,17 @@ header{
         justify-content: space-between;
         > li{
             margin-bottom: $spacing-1*7;
-            > img{
+            img{
                 margin-bottom: $spacing-1*2;
+                transition: all 0.7s;
+                &:hover{
+                    box-shadow: 0px 0px 10px #000;
+                    transform: translate(-5px, -5px);
+                }
             }
-            > p{
+            p{
+                color: $lightBlock;
+                font-size: $text-base;
                 line-height: $lineHeight-md;
             }
         }
@@ -71,8 +86,14 @@ footer{
     color: $darkBlock;
     text-align: center;
     padding: 64px 0 80px;
-    > ul{
+     ul{
         font-size: $text-sm;
         line-height: $lineHeight-sm;
+        a {
+            color: $darkBlock;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
