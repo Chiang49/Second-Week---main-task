@@ -1,0 +1,41 @@
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: $text-base;
+}
+
+h1{
+    font-size: $text-lg;                //字體大小
+    line-height: $lineHeight-xl;        //行高
+    font-weight: $textWeight-Black;     //字體粗細
+}
+
+h2{
+    font-size: $text-md;                //字體大小
+    line-height: $lineHeight-lg;        //行高
+    font-weight: $textWeight-Medium;    //字體粗細
+}
+
+h3{
+    font-size: $text-sm;                //字體大小
+    line-height: $lineHeight-md;        //行高
+    font-weight: $textWeight-Medium;    //字體粗細
+}
+
+p{
+    font-weight: $textWeight-Medium; 
+}
+
+a{
+    text-decoration: none;
+    color: $darkBlock;
+    font-size: $text-sm;
+}
+
+img{
+    vertical-align: bottom;
+}

@@ -1,0 +1,78 @@
+
+header{
+    height: 958px;
+    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true') 
+    no-repeat center;
+    background-size: cover;
+    color: $darkBlock;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    text-align: center;
+    ul{
+        font-size: $text-sm;
+        font-weight: $textWeight-Bold;
+    }
+    .listStyle{
+        width: 384px;
+        border-top: 1px solid #000000;
+        >li::before{
+            content: "";
+            width: 22px;
+            height: 22px;
+            display: inline-block;
+            background: $listStyle;
+            border-radius: 50%;
+            margin-right: $spacing-1*2;
+        }
+    }
+}
+
+.brand{
+    background: #000;
+    color: $darkBlock;
+    text-align: center;
+    .container{
+        > p{
+            line-height: $lineHeight-xs;
+            margin-bottom: $spacing-1*8.5;
+        }
+    }
+    .photo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.works{
+    text-align: center;
+    .worksList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > li{
+            margin-bottom: $spacing-1*7;
+            > img{
+                margin-bottom: $spacing-1*2;
+            }
+            > p{
+                line-height: $lineHeight-md;
+            }
+        }
+    }
+}
+
+footer{
+    background: #000;
+    color: $darkBlock;
+    text-align: center;
+    padding: 64px 0 80px;
+    > ul{
+        font-size: $text-sm;
+        line-height: $lineHeight-sm;
+    }
+}
