@@ -48,10 +48,6 @@ table {
   margin: 0 auto;
 }
 
-.h4 {
-  font-style: 64px;
-}
-
 .h3 {
   font-size: 24px;
 }
@@ -234,12 +230,18 @@ header {
           align-items: center;
 }
 
-header .information > a {
+header .information .community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .information .community > li > a {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
 
-header .information > a:hover {
+header .information .community > li > a:hover {
   opacity: 0.5;
 }
 
